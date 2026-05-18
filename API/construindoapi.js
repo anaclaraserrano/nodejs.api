@@ -36,7 +36,7 @@ const server = http.createServer((req, res) =>{
     res.setHeader ("Acess-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     res.setHeader("Acess-Control-Allow-Headers", "Content-Type");
 
-    if(method ==="OPTIONS") {
+    if(metodo ==="OPTIONS") {
         res.statusCode = 204;
         res.end();
         return;
