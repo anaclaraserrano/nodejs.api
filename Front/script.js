@@ -9,7 +9,7 @@ function listarPedidos() {
     lista.innerHTML = "Carregando pedidos...";
 
     //Faz uma requisição GET para a API com a url dela publicada (ou local)
-    fetch('https://nodejs-api-95r3.onrender.com/pedidos')
+    fetch('https://nodejs-api-wtbq.onrender.com/pedidos')
 
     //Converte a resposta da API para JSON
     .then(res => res.json())
@@ -52,7 +52,7 @@ function cadastrarPedido() {
     const cliente = document.getElementById("cliente").value;
     const produto = document.getElementById("produto").value;
 
-    fetch ("https://nodejs-api-95r3.onrender.com/pedidos", {
+    fetch ("https://nodejs-api-wtbq.onrender.com/pedidos", {
         method: "POST",
 
         //Informa que os dados enviados estão no formato JSON
@@ -103,7 +103,7 @@ function atualizarPedido () {
     const status= document.getElementById("statusAtualizar").value;
 
     //Envia uma requisição PUT para a API
-    fetch ("https://nodejs-api-95r3.onrender.com/pedidos", {
+    fetch ("https://nodejs-api-wtbq.onrender.com/pedidos", {
         method: "PUT",
         headers: {
             'Content-Type' : 'application/JSON'
@@ -143,7 +143,7 @@ function removerPedido() {
     //Pega o id digitado
     const id = Number (document.getElementById("idRemover").value);
 
-    fetch("https://nodejs-api-95r3.onrender.com/pedidos",{
+    fetch("https://nodejs-api-wtbq.onrender.com/pedidos",{
         method: "DELETE",
         headers: {
             'Content-Type' : 'application/JSON'
