@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./api/construindoapi.js"
+    "start": "node ./API/construindoapi.js"
   },
   "keywords": [],
   "author": "",
