@@ -9,7 +9,7 @@ function listarPedidos() {
     lista.innerHTML = "Carregando pedidos...";
 
     //Faz uma requisição GET para a API com a url dela publicada (ou local)
-    fetch("https://nodejs-api-95r3.onrender.com/pedidos")
+    fetch('https://nodejs-api-95r3.onrender.com/pedidos')
 
     //Converte a resposta da API para JSON
     .then(res => res.json())
@@ -25,7 +25,7 @@ function listarPedidos() {
         resultado.dados.forEach( pedido  => {
 
             //Cria um item de lista para cada pedido
-            const item = document.createElement ("li");
+            const item = document.createElement("li");
 
             item.textContent = `${pedido.id } - ${pedido,cliente} | ${pedido.produto} | ${pedido.status}`;
 
@@ -36,10 +36,10 @@ function listarPedidos() {
 
     })
 
-        .catch(() => {
-            lista.innerHTML = "Erro ao carregar pedidos"
+    .catch(() => {
+        lista.innerHTML = "Erro ao carregar pedidos"
 
-        });
+    });
 };
 
 
