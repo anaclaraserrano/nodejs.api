@@ -22,7 +22,6 @@ const server = http.createServer((req, res) =>{
 
     res.setHeader('Content-Type', 'application/JSON')
 
-
     //leitura da url
     const urlCompleta = url.parse(req.url, true);
 
@@ -30,13 +29,12 @@ const server = http.createServer((req, res) =>{
     const rota = urlCompleta.pathname;
     const metodo = req.method;
  
-
     //Liberação do CORS :
     res.setHeader("Acess-Control-Allow-Origin", "*");
     res.setHeader("Acess-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     res.setHeader("Acess-Control-Allow-Headers", "Content-Type");
 
-    if(metodo ==="OPTIONS") {
+    if(metodo === "OPTIONS") {
         res.statusCode = 204;
         res.end();
         return;
@@ -57,7 +55,7 @@ const server = http.createServer((req, res) =>{
     //Criação do método POST
     if( rota === "/pedidos" && metodo === "POST") {
         //Variável body irá armazenar todas as partes do conteúdo enviados pela requisição
-        let body = ' ';
+        let body = '';
 
         //.on = ação
         //Ao disparo da requisição, a ação referente ao armazenamento das partes dentro do body irá acontecer.
@@ -181,8 +179,8 @@ const server = http.createServer((req, res) =>{
 });
 
 //Derfinição da porta onde o servidor rodará
-    const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-server.listen(PORT , () =>{
+server.listen(PORT, () =>{
     console.log (`Servidor rodando na porta ${PORT}`);
 });
