@@ -27,7 +27,7 @@ function listarPedidos () {
             //Cria um item de lista para cada pedido
             const item = document.createElement ("li");
 
-            item.textContent = `${pedido.id }- ${pedido,cliente} | ${pedido.produto} | ${pedido.status}`;
+            item.textContent = `${pedido.id } - ${pedido,cliente} | ${pedido.produto} | ${pedido.status}`;
 
 
             //Adiciona o item criado dentro da lista no HTML
