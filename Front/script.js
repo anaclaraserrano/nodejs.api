@@ -1,6 +1,6 @@
 //Funcç~qao responsáel por buscar os pedidos na API e exibir na tela
 
-function listarPedidos () {
+function listarPedidos() {
 
     //Buscar no HTML o elemento onde a lista será exibida
     const lista = document.getElementById("lista");
