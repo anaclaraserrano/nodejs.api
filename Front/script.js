@@ -1,14 +1,12 @@
-//Funcç~qao responsáel por buscar os pedidos na API e exibir na tela
+//Função responsável por buscar os pedidos na API e exibir na tela
 
-//Buscar no HTML o elemento onde a lista será exibida
+function listarPedidos() {
+
+    //Buscar no HTML o elemento onde a lista será exibida
     const lista = document.getElementById("lista");
 
     //Limpa a lista antes de exibir os pedidos
     lista.innerHTML = "Carregando pedidos...";
-    
-function listarPedidos() {
-
-    
 
     //Faz uma requisição GET para a API com a url dela publicada (ou local)
     fetch('https://nodejs-api-95r3.onrender.com/pedidos')
