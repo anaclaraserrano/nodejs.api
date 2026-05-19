@@ -72,7 +72,7 @@ function cadastrarPedido() {
     })
 
     //Converte a reposta da API para JSON
-    .then(res => res.json ())
+    .then(res => res.json())
 
     //Depois que o pedido for cadastrado, atualiza a lista na tela
     .then(() => {
