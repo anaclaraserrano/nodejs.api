@@ -94,7 +94,7 @@ function cadastrarPedido() {
 
 //Atualizar pedido (PUT)
 //Função responsável por atualizar o status de um pedido
-function atualizarPedido () {
+function atualizarPedido() {
 
     //Pega o id infoemado e o força a ser um numero
     const id = Number(document.getElementById("idAtualizar").value);
@@ -141,7 +141,7 @@ function atualizarPedido () {
 function removerPedido() {
 
     //Pega o id digitado
-    const id = Number (document.getElementById("idRemover").value);
+    const id = Number(document.getElementById("idRemover").value);
 
     fetch("https://nodejs-api-wtbq.onrender.com/pedidos",{
         method: "DELETE",
