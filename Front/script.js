@@ -32,8 +32,6 @@ function listarPedidos() {
 
             //Adiciona o item criado dentro da lista no HTML
             lista.appenChild(item)
-            //Rebaixe a lista atualizada
-            listarPedidos();
         });
 
     })
