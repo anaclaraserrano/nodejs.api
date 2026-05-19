@@ -30,9 +30,9 @@ const server = http.createServer((req, res) =>{
     const metodo = req.method;
  
     //Liberação do CORS :
-    res.setHeader("Acess-Control-Allow-Origin", "*");
-    res.setHeader("Acess-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-    res.setHeader("Acess-Control-Allow-Headers", "Content-Type");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
     if(metodo === "OPTIONS") {
         res.statusCode = 204;
