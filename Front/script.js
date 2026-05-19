@@ -20,7 +20,6 @@ function listarPedidos() {
         //Limpando a lista para prencher com os pedidos
         lista.innerHTML= "";
 
-
         //Percorrendo o array de pedidos recebido da API
         resultado.dados.forEach( pedido  => {
 
@@ -31,14 +30,12 @@ function listarPedidos() {
 
 
             //Adiciona o item criado dentro da lista no HTML
-            lista.appenChild(item)
+            lista.appendChild(item)
         });
 
     })
-
     .catch(() => {
         lista.innerHTML = "Erro ao carregar pedidos"
-
     });
 };
 
